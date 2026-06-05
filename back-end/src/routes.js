@@ -1,6 +1,9 @@
-import { app } from './app.js'
+import express from 'express'
 
+const router = express.router() 
 
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
     res.send("Estou na escuta!");
 });
+
+export { router }
